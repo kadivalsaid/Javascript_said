@@ -13,7 +13,20 @@ let valueInNumber= Number(score) //convert string to number
 
 let comeback = 77
 let stringValue = String(comeback)
-console.log(stringValue)
-console.log(typeof stringValue) //string
+// console.log(stringValue)
+// console.log(typeof stringValue) //string
+
+//***********operation***********
+let value = 4
+let negvaue = -value
+// console.log(negvaue)
+
+// console.log("1" + 2)
+// console.log(1 + "2")
+// console.log("1" + 2 + 3)
+// console.log(1 + 2 + "3")
+// console.log(1 + 2 + "3" + 5)
+
+console.log(+true)
 
 
