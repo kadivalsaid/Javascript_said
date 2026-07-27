@@ -25,3 +25,6 @@ const sayHello = function () {
 };
 console.log(typeof sayHello);
 //  console.log(sayHello());
+
+// stack(primitive), heap(reference/non-primitive)
+
