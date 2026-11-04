@@ -1,0 +1,123 @@
+/* Color Scheme Switcher - style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Top navigation bar */
+nav {
+    width: 100%;
+    min-height: 34px;
+    padding: 3px 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #eeeeee;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+nav a {
+    min-width: 96px;
+    height: 24px;
+    padding: 3px 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #eeeeee;
+    border: 1px solid #777777;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 1;
+}
+
+/* Main content */
+.canvas {
+    width: 100%;
+    min-height: calc(100vh - 34px);
+    padding: 66px 12px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.canvas h1 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.button {
+    width: 67px;
+    height: 67px;
+    display: inline-block;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+/* Arrange the first three color boxes in one row */
+#grey,
+#white,
+#blue {
+    margin: 0 1px;
+}
+
+#grey {
+    background-color: grey;
+}
+
+#white {
+    background-color: white;
+}
+
+#blue {
+    background-color: blue;
+}
+
+/* Place the yellow box centered on the next row */
+#yellow {
+    background-color: yellow;
+    margin-top: 2px;
+}
+#green {
+    background-color: green;
+    margin-top: 2px;
+}
+
+/* Keep the instruction below the color boxes */
+.canvas h2 {
+    max-width: 270px;
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+.canvas h2 span {
+    display: block;
+}
+
+/* Slightly larger spacing on wider screens */
+@media (min-width: 600px) {
+    .canvas {
+        padding-top: 70px;
+    }
+}
