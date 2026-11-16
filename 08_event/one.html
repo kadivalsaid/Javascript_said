@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: #414141;">
+    <h2 style="color: red;">Amazing Image</h2>
+    <div>
+        <ul id = "image">
+            <li><img width="200px" id ="photoshop" src="https://webneel.com/daily/sites/default/files/images/daily/11-2020/1-transform-photos-lights-pure-imagination.preview.jpg" alt="photoshop"> </li>
+            <li><img width="200px" id ="japan" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvi8Zj7U9rRvssQC_lbzSyicl-Zuc1249bHOdIA7_XQ&s=10" alt=""> </li>
+            <li><img width="200px" id ="river" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRccTLScTE-vJV8JkJvUYpRPNtnn6RbbNA34-zxSB4Z8Q&s=10" alt=""> </li>
+            <li><img width="200px" id ="owl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdo6SH4ZfIGWaZCBPLD8PcVwhhEgMTMq1ZC0VyNFq86w&s=10" alt=""> </li>
+            <li><img width="200px" id ="prayer" src="https://static.vecteezy.com/system/resources/thumbnails/041/451/283/small/ai-generated-a-christian-man-praying-to-god-crying-and-emotional-with-his-arms-raised-photo.jpg" alt=""> </li>
+            <li><a style="color:blueviolet;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    //  document.getElementById('owl').onclick = function(){
+    //     alert('Owl image clicked!')
+    //  }
+
+    // document.getElementById('image').addEventListener('click',function(e){
+    //    console.log("clicked inside the image");
+         
+    // },true)
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //    console.log("owl image clicked");
+    //      e.stopPropagation
+    // },true)
+    // //attachEvent()
+
+    // document.getElementById('google').addEventListener('click',function(e){
+       
+    //      e.preventDefault();
+    //      e.stopPropagation();
+    //      console.log("google link clicked");
+    // },false)
+
+   document.querySelector('#image').addEventListener('click',function(e){
+   // console.log(e.target.tagName);
+    if(e.target.tagName == 'IMG'){
+        console.log(e.target.id);
+        let removeIt = e.target.parentNode;
+        removeIt.remove();
+    }
+    
+    
+    // removeIt.parentNode.removeChild(removeIt);
+   })
+   
+</script>
+</html>
